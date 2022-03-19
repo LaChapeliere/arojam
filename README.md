@@ -9,7 +9,7 @@ Made with GB Studio
 ### Writing
 - [ ] Initial dialogue
 - [ ] Matchmaker's introduction
-- [ ] Matchmaking quizz
+- [x] Matchmaking quizz
 - [ ] Conclusion
 
 ### Art
