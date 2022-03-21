@@ -77,7 +77,116 @@
                     "y": 24,
                     "movementType": "faceInteraction",
                     "direction": "up",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Here you are!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "868b7be9-3e3e-4f28-a1ca-5357cf985abe"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "$self$",
+                                "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                            },
+                            "id": "92109808-ded1-44cc-80f6-2b3c794322b8"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I have a surprise\nfor you...",
+                                    "I've booked you an\nappointment with a\nmatchmaker.",
+                                    "They have super\ngood reviews on \nYelp!",
+                                    "So, what do you\nsay?"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "01597c02-c4b0-4b9a-ae80-76a5fb21c87d"
+                        },
+                        {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Errr...",
+                                "falseText": "No thanks..."
+                            },
+                            "id": "5e324e58-c402-4414-85df-9ae92f121afe"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Yeah, yeah, I\nknow, you're\ngreyaro...",
+                                    "Whatever that\nmeans..."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "85d8055c-0759-48fe-80b7-2b9bb5b6e5f6"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "player",
+                                "emoteId": "a12f6e9c-2bb1-4164-8d5b-4dbdda4bdceb"
+                            },
+                            "id": "c156fe37-13ec-4a4e-841f-64ff6136bd68"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "But eveyone needs\nlove!",
+                                    "You just need to\nfind the right\nperson!",
+                                    "So stop beeing a\ngrouch and trust\nme...",
+                                    "Let's go!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "0fe2e669-7188-4bf0-890f-6c1541d66c7d"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "player",
+                                "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                            },
+                            "id": "d119e781-5fd7-4a7a-9419-33662067a7dc"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "$self$",
+                                "direction": {
+                                    "type": "direction",
+                                    "value": "left"
+                                }
+                            },
+                            "id": "3a633b8f-fd0a-42ea-8632-2b111e8fbec0"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                    "type": "number",
+                                    "value": 8
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 9
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                            },
+                            "id": "8f89fcd1-df92-45ae-ad38-ffb34a87c6d5"
+                        }
+                    ],
                     "spriteType": "actor",
                     "startScript": [],
                     "hit1Script": [],
@@ -1787,6 +1896,146 @@
                                                         ]
                                                     },
                                                     "id": "d4e2baf7-3785-48fd-a331-af72ff4dd43e"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "right"
+                                                        }
+                                                    },
+                                                    "id": "159ec4b5-4a27-4614-aaab-6640a495c29e"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727"
+                                                    },
+                                                    "id": "a4b0fb8b-34c9-4425-bb03-278ea80c21c8"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "But, but, ...",
+                                                            "That's not what I\npaid you for!!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "f536f86a-5852-45be-97e0-dfdbea5ddaff"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                                                    },
+                                                    "id": "05939d76-7dde-4850-88ec-c606678292cf"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You're supposed\nto find her a\ndate!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "2683b6fe-2ec4-41de-b7da-6bb7dddc9cca"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "left"
+                                                        }
+                                                    },
+                                                    "id": "7984584d-eeb5-41a0-9134-4190c126f288"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                                                    },
+                                                    "id": "d10f8ae4-2a9f-4565-9add-a79ac09e9a10"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "My shop says\n\"Love Guaranteed\".",
+                                                            "Not \"Date\nGuaranteed\", duh!",
+                                                            "Romantic love\nisn't the kind of \nvaluable love!",
+                                                            "Stop pushing your\ndreams onto other\npeople, you jerk!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "dc4a8288-ff23-4ba2-afba-0a95fbe89757"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "down"
+                                                        }
+                                                    },
+                                                    "id": "02557af6-4b7a-4886-9e90-dcceaa887864"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                    },
+                                                    "id": "fc32ef53-d570-40c4-af20-775538524ada"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You're valid,\nsweet!",
+                                                            "And here's a\nfreebie...",
+                                                            "You deserve\nrespect, aro-ness\nand all!",
+                                                            "And you're allowed\nto ask for it from\nyour friends!",
+                                                            "If they won't give\nyou that, it's\nokay to drop them.",
+                                                            "Don't let anyone\nforce you into\na box!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "42a8351b-de94-4758-910b-e128abffab25"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "148fba14-ff4c-45df-9e8d-28fe05e15cc6"
+                                                    },
+                                                    "id": "5bf72be5-1042-4a6e-a814-903f433dd9e2"
+                                                },
+                                                {
+                                                    "command": "EVENT_FADE_OUT",
+                                                    "args": {
+                                                        "speed": 5
+                                                    },
+                                                    "id": "63beeb85-0750-4f75-afe4-2688110352e4"
+                                                },
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    },
+                                                    "id": "073347c9-6999-45c3-9bce-69bc110182aa"
                                                 }
                                             ],
                                             "false": [
@@ -1849,8 +2098,114 @@
                     "updateScript": [],
                     "moveSpeed": 1,
                     "animSpeed": 15,
-                    "collisionGroup": "",
                     "name": "Matchmaker"
+                },
+                {
+                    "name": "Friend",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "40dcd163-9f72-4861-8131-b01eb9baa000",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "7",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "They'll help you,\ngo talk to them!",
+                                                "Go, go!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "c97c2051-d0c4-4022-b85a-d1f07ddff547"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_FALSE",
+                                        "args": {
+                                            "variable": "8",
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "I'm so excited for\nyou!!!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "78b603ed-d2e7-4d42-819a-50705af2295a"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "148fba14-ff4c-45df-9e8d-28fe05e15cc6"
+                                                    },
+                                                    "id": "24b3f028-aa71-4edf-b609-e2f5f7c5f001"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "89249bba-e831-4a0e-8fd5-6eb830eb2241"
+                                    }
+                                ]
+                            },
+                            "id": "83dad054-895d-4420-92e3-e82ba545969a"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                    "type": "number",
+                                    "value": 9
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 5
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                            },
+                            "id": "65163744-16a7-4b32-8ab2-ecefdc15ad7b"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "$self$",
+                                "direction": {
+                                    "type": "direction",
+                                    "value": "down"
+                                }
+                            },
+                            "id": "095232ce-5199-4993-89ad-2c2a18c2d520"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                    "x": 6,
+                    "y": 13
                 }
             ],
             "triggers": [],
@@ -6030,9 +6385,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
+            891,
             30,
-            30,
-            891
+            30
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",

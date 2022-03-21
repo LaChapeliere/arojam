@@ -4,13 +4,16 @@ Made with GB Studio
 
 ## TODO :
 ### Programming
-- [ ] Figure out how GB Studio works
+- [x] Figure out how GB Studio works
+- [ ] Adjust cinematic of friend walking away
+- [ ] Get friend to react when game starts
+- [ ] Auto emote/dialogue when making friend wait
 
 ### Writing
-- [ ] Initial dialogue
-- [ ] Matchmaker's introduction
+- [x] Initial dialogue
+- [x] Matchmaker's introduction
 - [x] Matchmaking quizz
-- [ ] Conclusion
+- [x] Conclusion
 
 ### Art
 - [ ] Make a list of assets
