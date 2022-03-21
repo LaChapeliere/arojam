@@ -11,9 +11,9 @@ Made with GB Studio
 
 ### Writing
 - [x] Initial dialogue
-- [ ] Matchmaker's introduction
+- [x] Matchmaker's introduction
 - [x] Matchmaking quizz
-- [ ] Conclusion
+- [x] Conclusion
 
 ### Art
 - [ ] Make a list of assets
