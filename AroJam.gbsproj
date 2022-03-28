@@ -3182,7 +3182,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "type": "TOPDOWN"
+            "type": "TOPDOWN",
+            "playerSpriteSheetId": "65928486-52f5-4c0b-9688-586d8209ef65"
         }
     ],
     "backgrounds": [
