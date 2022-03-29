@@ -215,7 +215,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "updateScript": [],
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "name": "Friend"
                 }
@@ -2128,7 +2128,7 @@
                     "animate": false,
                     "spriteSheetId": "b3a64ffa-d0a9-434e-b5a4-2acb30b81b12",
                     "direction": "right",
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
@@ -8712,7 +8712,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 170,
-        "worldScrollY": 116,
+        "worldScrollY": 279,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
