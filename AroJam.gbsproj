@@ -44,8 +44,8 @@
                 {
                     "id": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
                     "spriteSheetId": "b3a64ffa-d0a9-434e-b5a4-2acb30b81b12",
-                    "x": 21,
-                    "y": 24,
+                    "x": 23,
+                    "y": 26,
                     "movementType": "faceInteraction",
                     "direction": "up",
                     "script": [
@@ -139,17 +139,6 @@
                                         "id": "d119e781-5fd7-4a7a-9419-33662067a7dc"
                                     },
                                     {
-                                        "command": "EVENT_ACTOR_SET_DIRECTION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "direction": {
-                                                "type": "direction",
-                                                "value": "left"
-                                            }
-                                        },
-                                        "id": "3a633b8f-fd0a-42ea-8632-2b111e8fbec0"
-                                    },
-                                    {
                                         "command": "EVENT_ACTOR_MOVE_TO",
                                         "args": {
                                             "actorId": "$self$",
@@ -216,7 +205,7 @@
                     "hit3Script": [],
                     "updateScript": [],
                     "moveSpeed": 0.5,
-                    "animSpeed": 15,
+                    "animSpeed": 31,
                     "name": "Friend"
                 }
             ],
@@ -2130,7 +2119,7 @@
                     "spriteSheetId": "b3a64ffa-d0a9-434e-b5a4-2acb30b81b12",
                     "direction": "right",
                     "moveSpeed": 0.5,
-                    "animSpeed": 15,
+                    "animSpeed": 31,
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
@@ -7392,7 +7381,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 97,
-        "worldScrollY": 219,
+        "worldScrollY": 369,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
