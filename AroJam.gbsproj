@@ -4118,26 +4118,6 @@
     ],
     "backgrounds": [
         {
-            "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
-            "name": "cave",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "cave.png",
-            "tileColors": []
-        },
-        {
-            "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
-            "name": "house",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "house.png",
-            "tileColors": []
-        },
-        {
             "id": "dc3a8f40-f1a0-4294-b821-ce952a5754f6",
             "name": "interiorShop",
             "width": 20,
@@ -4158,16 +4138,6 @@
             "tileColors": []
         },
         {
-            "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
-            "name": "menu",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "menu.png",
-            "tileColors": []
-        },
-        {
             "id": "1b7fa267-d716-40f0-b0d0-f4f966610e07",
             "name": "outside",
             "width": 32,
@@ -4178,16 +4148,6 @@
             "tileColors": []
         },
         {
-            "id": "40fda058-df90-4205-a239-fe77bce4fa79",
-            "name": "stars",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "stars.png",
-            "tileColors": []
-        },
-        {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
             "name": "titlescreen",
             "width": 20,
@@ -4195,16 +4155,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "tileColors": []
-        },
-        {
-            "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
-            "name": "underground",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "underground.png",
             "tileColors": []
         }
     ],
@@ -4591,7 +4541,7 @@
                     "id": "be295294-196b-4620-a3f1-df13515b4497",
                     "name": "",
                     "animationType": "multi_movement",
-                    "flipLeft": true,
+                    "flipLeft": false,
                     "animations": [
                         {
                             "id": "54f58579-64ed-4b98-9266-397b23070940",
@@ -4601,7 +4551,7 @@
                                     "tiles": [
                                         {
                                             "id": "b6b740a5-e313-4911-8783-1cfcbbded639",
-                                            "x": 0,
+                                            "x": 2,
                                             "y": 8,
                                             "sliceX": 0,
                                             "sliceY": 0,
@@ -4614,7 +4564,7 @@
                                         },
                                         {
                                             "id": "72a53c64-5f6b-44ef-9825-c2de8542d67a",
-                                            "x": 0,
+                                            "x": 2,
                                             "y": 2,
                                             "sliceX": 0,
                                             "sliceY": 6,
@@ -4627,7 +4577,7 @@
                                         },
                                         {
                                             "id": "7c70d11d-0d73-4930-9dd9-f1ffbe272c1c",
-                                            "x": 1,
+                                            "x": 3,
                                             "y": 8,
                                             "sliceX": 1,
                                             "sliceY": 0,
@@ -4640,7 +4590,7 @@
                                         },
                                         {
                                             "id": "ca2ee46f-ea32-4384-90a0-e613383a65cc",
-                                            "x": 1,
+                                            "x": 3,
                                             "y": 2,
                                             "sliceX": 1,
                                             "sliceY": 6,
@@ -4660,7 +4610,60 @@
                             "frames": [
                                 {
                                     "id": "d9ccdc89-f0d8-4ac2-bd09-26b5ae37ef02",
-                                    "tiles": []
+                                    "tiles": [
+                                        {
+                                            "id": "432ec1f9-0b63-4764-af75-1a0e228e97d1",
+                                            "x": 2,
+                                            "y": 8,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "c6eb764b-ac16-4688-9857-dfbc3f90230d",
+                                            "x": 2,
+                                            "y": 2,
+                                            "sliceX": 0,
+                                            "sliceY": 6,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "153b3ca2-f7e6-45e7-90ce-56c24c7cc6eb",
+                                            "x": 3,
+                                            "y": 8,
+                                            "sliceX": 1,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "7c66a3f7-7698-4c1c-8b0f-d4ecc536d959",
+                                            "x": 3,
+                                            "y": 2,
+                                            "sliceX": 1,
+                                            "sliceY": 6,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -7381,7 +7384,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 97,
-        "worldScrollY": 369,
+        "worldScrollY": 0,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -7410,9 +7413,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            541,
-            205,
-            205
+            778,
+            295,
+            295
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
