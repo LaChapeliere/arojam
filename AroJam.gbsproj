@@ -1383,7 +1383,8 @@
                                         "command": "EVENT_IF_TRUE",
                                         "args": {
                                             "variable": "0",
-                                            "__collapseElse": false
+                                            "__collapseElse": false,
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -2261,7 +2262,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Three huge gems,\nsparkling in their\nglass casing."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "e6c5ca0e-7543-48cc-a665-29d5e01f3852"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -2282,7 +2294,19 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "A card for a tenth\nyear wedding\nanniversary...",
+                                    "Apparently sent by\na happy couple to\nthank the witch."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "265113ce-7585-4d5b-b143-0302aa5f468f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -2291,9 +2315,840 @@
                     "id": "7c1bc847-fe4e-4697-8b65-72553ce9a7cf",
                     "x": 15,
                     "y": 9
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "80992d1b-0dc4-4a74-b144-3b8f6bb41583",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "7",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Welcome to my \nhumble shop.",
+                                                "So you're looking\nfor love...",
+                                                "Let's see what I\ncan do for you..."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "542bc799-e5f3-41a5-b8c2-1f6a3c0659bb"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                            "emoteId": "cd2b9271-f689-4fe2-8fda-3ccc443b4c21"
+                                        },
+                                        "id": "9c73095f-f992-4eb9-b77e-1fa0811b737f"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I just need you\nto answer a few\nquestions first."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "921f04fb-193d-41d4-ac81-ddda2e4a82fb"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                            "emoteId": "2f2806af-f8a6-44fd-9d03-09a44d0059f7"
+                                        },
+                                        "id": "7dab3e98-1428-4de5-ba01-835e9a1ae159"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "What kind of\nperson are you?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "ae499ee5-be37-47d2-951a-1c0d1d618c41"
+                                    },
+                                    {
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "0",
+                                            "trueText": "Indoorsy",
+                                            "falseText": "Outdoorsy"
+                                        },
+                                        "id": "01bacbf0-35c0-4f66-a7e1-7d7ef71f1194"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Alright!",
+                                                "What's most\nimportant to you?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "7340eed5-a048-4c07-b6b2-08da4c51a3e7"
+                                    },
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "__collapseElse": false,
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_CHOICE",
+                                                    "args": {
+                                                        "variable": "1",
+                                                        "trueText": "Taste",
+                                                        "falseText": "Touch"
+                                                    },
+                                                    "id": "d28105fe-63e3-4018-bc9c-57f8a2c9c353"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Okay, last\nquestion!",
+                                                            "You like them..."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "18cc3bc9-5d15-414e-9024-57c91e7f2a6a"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "1",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "2",
+                                                                    "trueText": "Zesty",
+                                                                    "falseText": "Sweet"
+                                                                },
+                                                                "id": "9b2b16e8-da15-4382-a42e-cb4a6d32573d"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "3",
+                                                                    "trueText": "Distinguished",
+                                                                    "falseText": "Rugged"
+                                                                },
+                                                                "id": "0b4155e2-d1a1-4b79-a1c1-1dedd1e05621"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "b26446ac-3a01-4c5c-8788-fb446ccc3fd5"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_CHOICE",
+                                                    "args": {
+                                                        "variable": "4",
+                                                        "trueText": "Culture",
+                                                        "falseText": "Nature"
+                                                    },
+                                                    "id": "b1872fb8-8e8d-4f13-834e-b3cbc4dee22c"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Okay, last\nquestion!",
+                                                            "You like them..."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "f426bd49-9434-4c6f-8b5c-9842cacb1a1b"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "4",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "5",
+                                                                    "trueText": "Whimsical",
+                                                                    "falseText": "Well-read"
+                                                                },
+                                                                "id": "52cb48b9-d4dd-409d-8eeb-3a81079c7978"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "6",
+                                                                    "trueText": "Faithful",
+                                                                    "falseText": "Wild"
+                                                                },
+                                                                "id": "3ee44c8b-c914-44e7-9f7a-4a4181e33def"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "8cd91f92-5146-4930-b6fd-084f3ea29559"
+                                                }
+                                            ]
+                                        },
+                                        "id": "f26022f7-e171-4da5-af23-de20e549f744"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Great!",
+                                                "I'm going to need\na few minutes...",
+                                                "Go browse the shop\nor something..."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "3692b2f0-4ab9-4627-91f6-7da68bfc21a9"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "7"
+                                        },
+                                        "id": "f0f35e6b-ebf4-43c2-a9bd-22d29ec4b223"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TIMER_SCRIPT",
+                                        "args": {
+                                            "duration": 10,
+                                            "__scriptTabs": "end"
+                                        },
+                                        "children": {
+                                            "script": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "8"
+                                                    },
+                                                    "id": "cc5bdcaa-4c53-443f-8ef6-5e127891a4d4"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727"
+                                                    },
+                                                    "id": "1b111034-c343-42a7-ba3c-556d16a81544"
+                                                },
+                                                {
+                                                    "command": "EVENT_TIMER_DISABLE",
+                                                    "args": {},
+                                                    "id": "fce46510-c65e-4edb-b468-ec9e0fe0a937"
+                                                }
+                                            ]
+                                        },
+                                        "id": "8d6cf6ec-4cbe-4bc9-9a1b-80278bc0a1ab"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "8",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Good, good!",
+                                                            "I have the perfect\nlove for you!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "e0bf3313-498f-4dee-b48c-335392930948"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                    },
+                                                    "id": "566e3bc2-8c60-43b5-b82b-74d2cfaabd32"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "1",
+                                                                    "__collapseElse": false,
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_IF_TRUE",
+                                                                            "args": {
+                                                                                "variable": "2",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Lemon pie!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "def65a57-21ae-4d1c-9a82-d996498e5902"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "player",
+                                                                                            "emoteId": "2f2806af-f8a6-44fd-9d03-09a44d0059f7"
+                                                                                        },
+                                                                                        "id": "d10567e6-45e3-4020-800e-4ad4b6532f04"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Lemon pie...\nIt's the One True\nCake for you!",
+                                                                                                "You should learn\nhow to make it.",
+                                                                                                "That way you can\nfeel the love\nanytime!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "b0f85534-01e7-4291-937f-013aeff71b09"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                                                            "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                                                        },
+                                                                                        "id": "7948e217-baf5-49f1-94ab-e546b9d1bd8a"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Don't put meringue\non it though.\nIt's yucky!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "066b949e-60fd-43e6-9d31-55f4b2ad212a"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Cinamon buns are\nthe thing for you!",
+                                                                                                "Warm, sweet and\na little spicy, \nmidly goey...",
+                                                                                                "I've texted you\nthe address for a\nbakery.",
+                                                                                                "They do deliveries\ntoo!",
+                                                                                                "Yes, I have your\nphone number,\ndon't ask..."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "116b5cc2-4dbb-44e0-9679-3634a358764e"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "id": "0fb34dab-555e-4688-a0d4-97979a7a2542"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_IF_TRUE",
+                                                                            "args": {
+                                                                                "variable": "3",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "I'm thinking\nSiamese...",
+                                                                                                "Or maybe Maine\nCoon. How do you\nfeel about hair?",
+                                                                                                "Doesn't matter!\nLook up FFIN, they\nwill pair you up.",
+                                                                                                "That's for Fancy\nFelines In Need.",
+                                                                                                "They rescue\npedigree cats from\nabuse and rehome\nthem.",
+                                                                                                "They'll have a\nproper snobbish\nball of fluff."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "cef2597f-de10-4015-86ea-7ec45f161dcf"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                                                            "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                                                        },
+                                                                                        "id": "773c36de-5f7b-4432-8440-e9ec0e918eb9"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "You are in luck, I\nhave the perfect\ncompanion for you!",
+                                                                                                "That thief has\nbeen haunting my\nshop for weeks!",
+                                                                                                "She is pretty easy\ngoing.",
+                                                                                                "She'll probably \nfollow you home\nif you feed her.",
+                                                                                                "She's never liked\nme...",
+                                                                                                "I wasn't\nsure why she was\nsticking around."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "34523df4-2df1-4f14-a330-0b16c158a210"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                                                            "emoteId": "a12f6e9c-2bb1-4164-8d5b-4dbdda4bdceb"
+                                                                                        },
+                                                                                        "id": "7b09e641-3e79-46a8-a127-0c60b8ea208d"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Well, magic works\nin mysterious\nways..."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "fe1c1286-6cf0-4d8b-a220-9953bc926fd3"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "id": "62431d85-dd5c-401f-a33b-3dce9e20d975"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "d6f98d87-4399-40cc-a0b2-0a1956b346d2"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "4",
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_IF_TRUE",
+                                                                            "args": {
+                                                                                "variable": "5",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "You should take\nlessons to become\na clown."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "54140581-fa18-406e-bff0-e993fcc82aa1"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "player",
+                                                                                            "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727"
+                                                                                        },
+                                                                                        "id": "f9b223b2-0adf-4628-9427-8cdcbaa16c7f"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Don't give me that\nlook...",
+                                                                                                "You'll fall in\nlove with it,\nyou'll see!",
+                                                                                                "The freedom, the\nfun, the street\nfestivals...",
+                                                                                                "Trust me..."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "f3a300ad-b2f8-41d6-90c2-68f9162aefe9"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Goodness, you are\none tricky client!",
+                                                                                                "I've found the\nright people for\nyou though!",
+                                                                                                "There's this role-\nplay group...",
+                                                                                                "They need a 4th\nplayer to start a\ncampaign.",
+                                                                                                "They like to focus\non accurate\nhistorical games.",
+                                                                                                "They want to stay \nqueer-only so you\nwill fit right in!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "8485cdde-ce3a-4114-a73c-183bc287ce7b"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                                                            "emoteId": "148fba14-ff4c-45df-9e8d-28fe05e15cc6"
+                                                                                        },
+                                                                                        "id": "f914bdb8-b49f-411f-89c4-9e309be2e933"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "I sense good\nvibes coming!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "a240b65e-4f5d-4ba8-b301-685d21806e60"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "id": "d6c271a8-eb57-41b6-9b6b-518e8d02a111"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_IF_TRUE",
+                                                                            "args": {
+                                                                                "variable": "6",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Pretty easy,\naren't you?",
+                                                                                                "Don't know why\nyou need to come \nsee me...",
+                                                                                                "You need a dog in \nyour life, \nobviously!",
+                                                                                                "Texting you the\ncontact for a nice\nshelter right now.",
+                                                                                                "I suggest \nvolunteering there\ntoo.",
+                                                                                                "Anyway, a doggo to\nfollow you on your\nhikes.",
+                                                                                                "Doctor's order!",
+                                                                                                "Witch doctor.\nWhatever..."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "01ec3997-17ec-47d9-a7cc-e14f371107e7"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "I've sent your\nnumber to a friend\nof mine.",
+                                                                                                "Xe'll get in touch\nwith you..."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "faf24486-981f-419f-bef5-73e34be2541a"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "player",
+                                                                                            "emoteId": "2f2806af-f8a6-44fd-9d03-09a44d0059f7"
+                                                                                        },
+                                                                                        "id": "b825c081-8422-410e-84f3-ff844d0e5767"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Oh, yeah, I should\nexplain...",
+                                                                                                "Xe's in charge of\na wildlife\nprogram.",
+                                                                                                "Xe trains the\nvolunteer rangers.",
+                                                                                                "They scout the\nforest for injured\nanimals...",
+                                                                                                "Make sure the\nhunters stick to\nthe rules...",
+                                                                                                "Survey the various\nspecies...",
+                                                                                                "You can practice\nyour survival\nskills, too.",
+                                                                                                "Pretty sure xe'll\nhave to drag you\nout of the forest!"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "01d04af3-5538-41b3-b5aa-fcf0ce401ae7"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                                                            "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                                                        },
+                                                                                        "id": "2c904346-6c02-4472-b309-61584220622a"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "id": "0d64e12d-5b73-4b5d-bc26-46a7cfba20b8"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "eda45889-a038-4e65-b24f-3064f83bd6ff"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "fc891265-9e22-493a-a585-fd9f8743eb46"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "right"
+                                                        }
+                                                    },
+                                                    "id": "6d93b4be-5b71-4440-a2a4-5d67ce255fba"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727"
+                                                    },
+                                                    "id": "bc95ec21-c76b-4e73-876b-a3c2d1acf6a0"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "But, but, ...",
+                                                            "That's not what I\npaid you for!!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "31675623-fd02-4b23-a672-53b479a8a8f8"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "025cbccb-12e7-4cc3-a174-3b32ee10c883",
+                                                        "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                                                    },
+                                                    "id": "d9438029-a849-4adb-8757-74f948f7eca0"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You're supposed\nto find her a\ndate!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "642dcc07-6b33-4fbc-98cd-448a460019ce"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "left"
+                                                        }
+                                                    },
+                                                    "id": "bcd2ca4b-3f5f-485d-a73a-7175d5d62200"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                                                    },
+                                                    "id": "e242f8f5-6273-41bc-bff7-d5626a9ab8f7"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "My shop says\n\"Love Guaranteed\".",
+                                                            "Not \"Date\nGuaranteed\", duh!",
+                                                            "Romantic love is\nnot the only kind \nof valuable love!",
+                                                            "Stop pushing your\ndreams onto other\npeople, you jerk!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "e4c8302b-e7f7-41e9-afd4-9248242e36d1"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "direction": {
+                                                            "type": "direction",
+                                                            "value": "down"
+                                                        }
+                                                    },
+                                                    "id": "92e33cf2-02d1-49a7-9a1e-781df459ae58"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                                                    },
+                                                    "id": "a45388d4-466d-4e8e-9f4d-2a1eb98c0a9b"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You're valid,\nsweet!",
+                                                            "And here's a\nfreebie...",
+                                                            "You deserve\nrespect, aro-ness\nand all!",
+                                                            "And you're allowed\nto ask for it from\nyour friends!",
+                                                            "If they won't give\nyou that, it's\nokay to drop them.",
+                                                            "Don't let anyone\nforce you into\na box!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "9df473f3-6601-4635-a07f-110976fe83c2"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "148fba14-ff4c-45df-9e8d-28fe05e15cc6"
+                                                    },
+                                                    "id": "05e36da5-de34-4190-8611-ebbadafbfacb"
+                                                },
+                                                {
+                                                    "command": "EVENT_FADE_OUT",
+                                                    "args": {
+                                                        "speed": 5
+                                                    },
+                                                    "id": "1dfb53af-c161-4517-9541-58633298b564"
+                                                },
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    },
+                                                    "id": "21aa6bde-6798-43b9-869f-22e57edae1a6"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "I'm not ready yet!",
+                                                            "Just find some \nknick-knacks to\nlook at..."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "2f6aebc5-4491-494e-ac35-ddcd271b9fb0"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "566c8812-a204-45b5-b93a-c113c10c20de",
+                                                        "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                                                    },
+                                                    "id": "4680183e-72cc-4cee-91c0-04ab9a9b283a"
+                                                }
+                                            ]
+                                        },
+                                        "id": "f420e54d-d62d-45f8-9403-62bff8af1c31"
+                                    }
+                                ]
+                            },
+                            "id": "8dfa63fd-d81d-4480-b03c-f5a5ce5e6b2d"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "89fd2f3e-2455-4563-9d96-619e17f88b71",
+                    "x": 12,
+                    "y": 9
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "03356d33-99a9-4ccb-b484-bda2d7f36caa",
+                    "x": 4,
+                    "y": 9,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "The crystal ball\nlooks ancient.",
+                                    "You can see pink\nfog moving slowly\ninside it."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "99e51542-77fc-4b90-bfbf-c64450a896cc"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "collisions": [
                 0,
                 0,
@@ -2478,26 +3333,6 @@
                 0,
                 15,
                 0,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                15,
-                15,
-                15,
-                15,
-                0,
-                15,
-                0,
-                0,
-                15,
-                0,
                 0,
                 0,
                 0,
@@ -2512,6 +3347,26 @@
                 15,
                 15,
                 15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 15,
                 15,
                 0,
@@ -8703,16 +9558,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
-        "startX": 0,
-        "startY": 1,
+        "startSceneId": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55",
+        "startX": 12,
+        "startY": 13,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 170,
-        "worldScrollY": 279,
+        "worldScrollX": 97,
+        "worldScrollY": 0,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -8741,8 +9596,8 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            716,
-            30,
+            541,
+            205,
             205
         ],
         "showNavigator": true,
