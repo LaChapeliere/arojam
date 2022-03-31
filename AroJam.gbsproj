@@ -233,15 +233,39 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "e5c482c4-82fd-4633-be82-1b2bc398a20c",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "x": 9,
-                                "y": 14,
-                                "direction": "up",
-                                "sceneId": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55",
-                                "fadeSpeed": "2"
-                            }
+                                "variable": "9",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Why would you want\nto go there???"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "bc3378cb-eea6-41f7-96ba-e62b3758acbc"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "e5c482c4-82fd-4633-be82-1b2bc398a20c",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "x": 9,
+                                            "y": 14,
+                                            "direction": "up",
+                                            "sceneId": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55",
+                                            "fadeSpeed": "2"
+                                        }
+                                    }
+                                ]
+                            },
+                            "id": "4e4a84ca-271d-4fdc-a34c-67ccc9b87590"
                         }
                     ],
                     "id": "fc139bcd-a16b-4151-a9de-7b7e88e437d6",
