@@ -16,8 +16,8 @@
                 {
                     "id": "076a0612-024a-426a-85fc-3e1054b9f74e",
                     "spriteSheetId": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
-                    "x": 6,
-                    "y": 12,
+                    "x": 13,
+                    "y": 11,
                     "movementType": "static",
                     "direction": "right",
                     "script": [
@@ -144,16 +144,31 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 6
+                                                "value": 10
                                             },
                                             "y": {
                                                 "type": "number",
-                                                "value": 8
+                                                "value": 11
                                             },
                                             "moveType": "vertical",
                                             "useCollisions": false
                                         },
                                         "id": "8f89fcd1-df92-45ae-ad38-ffb34a87c6d5"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 6
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 8
+                                            }
+                                        },
+                                        "id": "670e7211-ea74-4b69-8d45-718bef4e8e3f"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_SET_DIRECTION",
@@ -6035,7 +6050,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 145,
-        "worldScrollY": 1,
+        "worldScrollY": 217,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -6064,9 +6079,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            778,
-            295,
-            295
+            540,
+            205,
+            205
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
