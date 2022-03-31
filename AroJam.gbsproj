@@ -2883,8 +2883,8 @@
                 {
                     "id": "5bd12dc2-12e2-4326-84f5-c5d5463abfcb",
                     "name": "",
-                    "animationType": "multi_movement",
-                    "flipLeft": true,
+                    "animationType": "fixed",
+                    "flipLeft": false,
                     "animations": [
                         {
                             "id": "e4ad842d-b4ce-40b8-84e6-a1b7a8ab4842",
