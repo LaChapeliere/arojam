@@ -17,6 +17,7 @@ Bugs:
 Bonus:
 - [ ] Ending-specific images for fade out screen at the end (8 assets + prog)
 - [ ] Adding a tarot deck object in the shop (assets and interaction to be determined)
+- [ ] Accompanying song
 - [ ] Logo screen
 
 - [x] Title screen
